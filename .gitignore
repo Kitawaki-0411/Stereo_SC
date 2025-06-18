@@ -1,0 +1,22 @@
+# ignore Folder
+m-research
+OpenCampus
+project2023
+rectified
+research
+runs
+sample
+test_stereoSC
+
+m-research/maenoyatu
+m-research/ONNX-CREStereo-Depth-Estimation
+m-research/ZED2_calibration
+seam_carving_master/M1_test/images
+
+# ignore Files
+*.png
+*.jpg
+*.mp4
+*.pkl
+
+# アップロード済み
