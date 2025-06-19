@@ -8,11 +8,13 @@
 stereo_SCのディレクトリやファイルの役割を簡単に記述します。
 
 ### ディレクトリ
-* `crestereo`    　: 深度推定に必要なモデルや関数など
-* `function`     　: stereo_video_seam_carvingに使用する関数など
-* `my_seam_carve`　: シームカービングの関数など
-* `sample_data`  　: 深度マップとマスク画像の推定結果など（このデータが有ればシームカービングの実行は可能）
-* `results`      　: シームカービング結果を記録
+* `crestereo` : 深度推定に必要なモデルや関数など
+* `function` : stereo_video_seam_carvingに使用する関数など
+* `results` : シームカービング結果を記録
+* `my_seam_carve` : シームカービングの関数など
+* `sample_data` : 深度マップとマスク画像の推定結果など（このデータが有ればシームカービングの実行は可能）
+* `video` : 縮小する動画用のディレクトリ
+
 
 ## 必要なデータ
 * [サンプルデータ](https://drive.google.com/drive/folders/1C_mDworgYfj2DWSmuJFlmqyC5soYeF59)
