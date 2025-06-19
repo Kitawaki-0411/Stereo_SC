@@ -7,7 +7,7 @@
 ## フォルダ構成
 stereo_SCのディレクトリやファイルの役割を簡単に記述します。
 
-###ディレクトリ
+### ディレクトリ
 * `crestereo/`: 深度推定に必要なモデルや関数など
 * `function/`: stereo_video_seam_carvingに使用する関数など
 * `my_seam_carve/`: シームカービングの関数など
