@@ -27,7 +27,8 @@ def depth_estimation(sbs_img):
 	# max_distance = 50
 
 	# Initialize model
-	model_path = f'C:/oit/py23/SourceCode/m-research/ONNX-CREStereo-Depth-Estimation/models/crestereo_{version}_iter{iters}_{input_shape[0]}x{input_shape[1]}.onnx'
+	# model_path = f'C:/oit/py23/SourceCode/m-research/ONNX-CREStereo-Depth-Estimation/models/crestereo_{version}_iter{iters}_{input_shape[0]}x{input_shape[1]}.onnx'
+	model_path = f'crestereo/models/crestereo_{version}_iter{iters}_{input_shape[0]}x{input_shape[1]}.onnx'
 	depth_estimator = CREStereo(model_path)
 	disp = depth_estimator(sbs_img[:,:sbs_img.shape[1]//2], sbs_img[:,sbs_img.shape[1]//2:])
 	disp = convert_int_num(disp).astype(np.uint8) 
@@ -35,7 +36,6 @@ def depth_estimation(sbs_img):
 	return disp
 
 def video_depth_estimate(img_list):
-
 	# Model options (not all options supported together)
 	iters = 5            	# Lower iterations are faster, but will lower detail. 
 							# Options: 2, 5, 10, 20 
