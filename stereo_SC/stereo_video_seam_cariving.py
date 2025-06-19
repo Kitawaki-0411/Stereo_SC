@@ -38,8 +38,8 @@ def resize_list(list, h, w):
 
 def main():
     # 動画をフルで処理するかどうか
-    # separate = 0: 動画をフルで処理
-    # separate = 1: 動画をフレーム指定して処理
+    # separate = 0: 動画の全フレームを縮小
+    # separate = 1: 動画のフレーム指定して縮小
     separate = 1
 
     # 実行：データ作成モード = 0, ピクル利用モード = 1
@@ -51,16 +51,16 @@ def main():
     # e = 400
 
     s = 200
-    e = 260
+    e = 201
 
     # 縮小させるpxサイズ
     dist = 100
     
-    # 動画の縮小
+    # テスト実行で処理を軽くするためのリサイズ
     resize = 0.5
 
     # 扱う動画のパス
-    video_path = "C:/oit/py23/SourceCode/m-research/seam_carving_master/M1_test/video/people_rect.mp4"
+    video_path = "video/people_rect.mp4"
 
     # 必要なキャッシュファイルのパス
     read_disp_cache = "sample/full_disp_cache.pkl"
@@ -71,7 +71,7 @@ def main():
     # 保存する動画の名前(拡張子[.mp4]不要)とディレクトリ
     save_name = "stereo_SC_stereo_cost"
     save_disp_name = f"disp_{save_name}"
-    save_dir = "C:/oit/py23/SourceCode/m-research/seam_carving_master/M1_test/results/sc_video"
+    save_dir = "results/video"
 
     # 動画の読み込み(容量でかすぎてピクル化できない)
     print("cutting video to frame")
