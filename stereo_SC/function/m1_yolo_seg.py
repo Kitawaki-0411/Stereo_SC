@@ -30,7 +30,7 @@ def make_mask(img):
 
     return mask
 
-def make_mask_list(img_list):
+def make_mask_arr(img_list):
     if None in img_list:
         print("img_list is None")
     else:
