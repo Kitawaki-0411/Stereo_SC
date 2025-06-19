@@ -63,8 +63,8 @@ def main():
     video_path = "video/people_rect.mp4"
 
     # 必要なキャッシュファイルのパス
-    read_disp_cache = "sample/full_disp_cache.pkl"
-    read_mask_cache = "sample/full_mask_cache.pkl"
+    read_disp_cache = "sample_data/full_disp_cache.pkl"
+    read_mask_cache = "sample_data/full_mask_cache.pkl"
     save_disp_cache = "disp_cache.pkl"
     save_mask_cache = "mask_cache.pkl"
 
