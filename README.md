@@ -22,9 +22,9 @@ stereo_SCのディレクトリやファイルの役割を簡単に記述しま�
 * [サンプルデータ](https://drive.google.com/drive/folders/1C_mDworgYfj2DWSmuJFlmqyC5soYeF59)
 
 * people_rect.mp4 の全フレームに対する深度マップとマスク画像のサンプルデータ
-  ステレオ動画： `people_rect`
+  - ステレオ動画： `people_rect`
   - 深度マップ　： `full_video_disp_cache[resize_x0.5].pkl`
-  マスク画像　： `full_video_mask_cache[resize_x0.5].pkl`
+  - マスク画像　： `full_video_mask_cache[resize_x0.5].pkl`
   
 実行の際に必要なので，ダウンロードして`sample_data`フォルダに配置してください
 
