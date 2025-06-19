@@ -15,11 +15,16 @@ stereo_SCのディレクトリやファイルの役割を簡単に記述しま�
 * `sample_data` : 深度マップとマスク画像の推定結果など（このデータが有ればシームカービングの実行は可能）
 * `video` : 縮小する動画用のディレクトリ
 
+### ファイル
+* `stereo_video_seam_cariving.py` : ステレオ動画のシームカービングを実行する関数 
 
 ## 必要なデータ
 * [サンプルデータ](https://drive.google.com/drive/folders/1C_mDworgYfj2DWSmuJFlmqyC5soYeF59)
 
-people_rect.mp4 の全フレームに対する深度マップ(full_disp_cache.pkl)とマスク画像(full_mask_cache.pkl)のピクルデータです．
+  people_rect.mp4 の全フレームに対する深度マップとマスク画像のサンプルデータ
+  ステレオ動画： `people_rect`
+  深度マップ　： `full_video_disp_cache[resize_x0.5].pkl`
+  マスク画像　： `full_video_mask_cache[resize_x0.5].pkl`
 実行の際に必要なので，ダウンロードして`sample`フォルダに配置してください
 
 ## 実行方法
